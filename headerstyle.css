@@ -1,0 +1,38 @@
+:root{
+    --azul: #193B55;
+    --rosa: #E50058;
+    --laranja: #FF740F;
+    --amarelo: #FFBE36;
+
+    --f-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --f-destaque: "Bebas Neue", sans-serif;
+}
+
+nav{
+    text-align: end;
+    background-color: #193b55;            
+    width: 100%;
+    height: 75px;
+    padding-top: 20px;
+}
+nav a, nav a:visited{
+    font-size: 1.5em;
+    font-family: var(--f-destaque);
+    color: white;
+    text-decoration: none;
+    position: relative;
+    margin-right: 1em;
+}
+a::after{
+    position: absolute;
+    content: " ";
+    width: 0%;
+    height: 3px;
+    background-color: #FF740F;
+    bottom: -2px;
+    left: 0px;
+    transition: 0.5s;
+}
+a:hover::after{
+    width: 120%;
+}

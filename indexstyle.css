@@ -1,0 +1,158 @@
+/* BANER --------------------------------------------- */
+:root{
+    --azul: #193B55;
+    --rosa: #E50058;
+    --laranja: #FF740F;
+    --amarelo: #FFBE36;
+
+    --f-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --f-destaque: "Bebas Neue", sans-serif;
+}
+
+#baner{
+    background-image:url(IMG/img-banner.jpg);
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 120vh;
+    font-size: 1.5em;
+    }
+#baner .banner-shadow{
+    background-color: #193b5525;
+    width: 100%;
+    height: 100%; 
+    transition: 0.5s ease-in-out;  
+    text-align: center;   
+}
+#baner .banner-shadow:hover{
+    background-color: #193b55a2;
+}
+#baner h1{    
+    padding-top: 20vw;
+    font-size: 7em;
+}
+
+/* SEÇÕES --------------------------------------------- */
+.secoes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20vh 0px;
+
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.texto p{
+    text-indent: 1em;
+    color: var(--laranja);
+}
+.texto h1{
+    font-size: 2em;
+    color: var(--azul);
+    position: relative;
+}
+.texto h1::after{
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 4px;
+    background-color: #FF740F;
+    bottom: -2px;
+    left: 0px;
+}
+.imagens{
+    overflow: hidden;
+}
+
+
+#sec1{
+    background-color: #EDE0DA;
+    text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.137);
+}
+
+#sec1 p{
+    margin-top: 1em;
+}
+
+#imgsec1{
+    margin-top: 1.5em;
+}
+#imgsec1 div{
+    margin:20px 0px;
+    width: 35vw;
+    min-width: 500px;
+    height: 8vw;
+    min-height: 114px;
+    background-size: 100%;
+    background-position: center center;
+    transition: 0.5s ease-in-out;
+    border: 2px solid var(--azul);
+    
+}
+#imgsec1 div:hover{
+    background-size: 120%;
+    transition: 1.5s ease-in-out;
+} 
+
+#txtsec1{
+    padding: 10px 0px;
+    width: 30%;
+    min-width: 300px;
+}
+
+
+#sec2{
+    background-color: #ffffff;
+    text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.137);
+}
+
+#sec2 p{
+    margin-top: 1em;
+}
+
+#imgsec2{
+    margin-top: 1.5em;
+}
+#imgsec2 div{
+    margin:20px 0px;
+    background-size: 100%;
+    background-position: center center;
+    transition: 0.5s ease-in-out;
+    border: 2px solid var(--azul);
+    
+}
+#imgsec2 div:hover{
+    background-size: 120%;
+    transition: 1.5s ease-in-out;
+} 
+
+#txtsec2{
+    padding: 10px 0px;
+    width: 30%;
+    min-width: 300px;
+}
+
+
+#seccaixas{
+    background-color: #EDE0DA;
+}
+.caixas{
+    padding: 10vw 0px;
+    background-color: var(--laranja);
+    width: 25vw;
+    max-width: 450px;
+    min-width: 300px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.205) ;
+}
+.caixas h2{
+    font-family: var(--f-destaque);
+    font-size: 2.5em;
+    text-align: right;
+    padding: 10px;
+}
+.caixas p{
+    margin: 1em;
+    text-indent: 1em;
+    text-align: justify;
+}
